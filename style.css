@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+@media (min-width: 320px) {
+
+    #responsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #responsive > figure {
+        width: 170px;
+        margin: 70px auto;
+        background-color: aqua;
+        border-radius: 10px;
+    }
+
+    #responsive > figure > img {
+        max-width: 100%;
+    }
+
+    #responsive > figure > figcaption {
+        background-color: rgb(231, 231, 231);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    #responsive {
+        width: 630px;
+        margin: 70px auto;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #responsive > figure {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    #responsive {
+        width: 1090px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #responsive > figure {
+        margin: 24px 6px;
+    }
+}
